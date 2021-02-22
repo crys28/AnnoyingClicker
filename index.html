@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+	<meta name="HandheldFriendly" content="True" />
+	<title>AnnoyingClicker</title>
+	<link rel="icon" type="image/png" href="images/icon.png">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+
+<body class="body">
+  <div>
+
+<h2 align="center" class="title"><b>Annoying  Clicker &#127808</b></h2>
+
+<div class="maindiv">
+
+  <div class="btn_rows">
+<button id="btn1" class="Btn1" onclick="setRandomColor();checkImage()"></button>
+
+<button id="btn2" class="Btn2" onclick="setRandomColor2();checkImage()"></button>
+
+<button id="btn3" class="Btn3" onclick="setRandomColor3();checkImage()"></button>
+
+<button id="btn4" class="Btn4" onclick="setRandomColor4();checkImage()"></button>
+  </div>
+
+  <div class="btn_rows">
+<button id="btn5" class="Btn5" onclick="setRandomColor5();checkImage()"></button>
+
+<button id="btn6" class="Btn6" onclick="setRandomColor6();checkImage()"></button>
+
+<button id="btn7" class="Btn7" onclick="setRandomColor7();checkImage()"></button>
+
+<button id="btn8" class="Btn8" onclick="setRandomColor8();checkImage()"></button>
+  </div>
+
+  <div class="btn_rows">
+<button id="btn9" class="Btn9" onclick="setRandomColor9();checkImage()"></button>
+
+<button id="btn10" class="Btn10" onclick="setRandomColor10();checkImage()"></button>
+
+<button id="btn11" class="Btn11" onclick="setRandomColor11();checkImage()" ></button>
+
+<button id="btn12" class="Btn12" onclick="setRandomColor12();checkImage()" ></button>
+  </div>
+
+  <div class="btn_rows">
+<button id="btn13" class="Btn13" onclick="setRandomColor13();checkImage()" ></button>
+
+<button id="btn14" class="Btn14" onclick="setRandomColor14();checkImage()" ></button>
+
+<button id="btn15" class="Btn15" onclick="setRandomColor15();checkImage()" ></button>
+
+<button id="btn16" class="Btn16" onclick="setRandomColor16();checkImage()" ></button>
+  </div>
+
+
+</div>
+
+<div id="fireworks" class="pyro" style="opacity: 0;position: absolute;left: -1000px">
+    <div class="before"></div>
+    <div class="after"></div>
+</div>
+
+
+<div class="box-rule">
+	<p class="rule-text"><b>Solve the<br> puzzle <br> as fast as you <br> can !</b></p>
+</div>
+
+<div class="result">
+  
+  <div class="result-text">
+   <p>RESULT : <img src="images/down_arrow2.png" class="down_arrow"></p>
+  </div>
+  
+  <div align="center">
+    <img src="kennen/kennen.jpeg" class="result-img">
+  </div>
+</div>
+
+
+<div class="box-taunt">
+	<p class="taunt-text">I bet you<br> won't resist  <br> even <br>5 mins !<br>&#128520</p>
+</div>
+
+
+<div class="footer-banner">
+	
+  <div class="footer1">
+    <p>©EPG</p>
+  </div>
+
+
+  <div class="footer2">
+    <p>Created by: &copy;Crys28</p> 
+  </div>
+
+  
+  <div class="footer3">
+    <a href="https://www.google.com/maps/place/EPG+420/@47.0601896,28.8929935,17z/data=!3m1!4b1!4m5!3m4!1s0x40c97dbcfbf2d27f:0x2d0b2e21a6e45810!8m2!3d47.060186!4d28.8951822"> <img src="images/location.png" class="icons_size" ></a>
+  <a href="https://www.instagram.com/epg_3/"><img src="images/insta.png" class="icons_size"></a>
+  <a href="https://www.youtube.com/channel/UC954v1Cc3pgvGZdz7SFZM6w?view_as=subscriber"><img src="images/yt.png" class="icons_size"></a>
+  </div>
+
+
+</div>
+
+<div class="box-music">
+<button id="fullscr" onclick="openFullscreen()">Fullscreen</button>
+<p>Here is some <br>music <br> if u get <br> bored &#128516 </p>
+
+<div id="ex1" class="modal" style="background-color: indianred;max-width: 600px; height: 400px;overflow-y: scroll;">
+  
+<div class="song" align="center">
+  <div class="playlistText">
+    <img src="images/song.png" style="float: left;width: 50px;height: 50px"> Beethoven<br><a style="font-size: 18px">Archduke Trio</a>
+  </div>
+
+  <audio controls loop class="audio">  
+  <source src="songs/Archduke-Trio-Beethoven.mp3" type="audio/mpeg"> 
+  </audio>
+</div>
+
+<div class="song" align="center" style="margin-top: 3%;"> 
+  <div class="playlistText">
+    <img src="images/song.png" style="float: left;width: 50px;height: 50px"> Eminem<br><a style="font-size: 18px">Sing for the moment</a>
+  </div>
+
+  <audio controls loop class="audio" style="margin-top: 5%">  
+  <source src="songs/EminemSingForTheMoment.mp3" type="audio/mpeg"> 
+  </audio>
+</div>
+
+<div class="song" align="center" style="margin-top: 3%;"> 
+  <div class="playlistText">
+    <img src="images/song.png" style="float: left;width: 50px;height: 50px"> Twenty One Pilots<br><a style="font-size: 18px">A car,a Torch,a Death</a>
+  </div>
+
+  <audio controls loop class="audio" style="margin-top: 5%">  
+  <source src="songs/TOP-AcarAtorchAdeath.mp3" type="audio/mpeg"> 
+  </audio>
+</div>
+
+<div class="song" align="center" style="margin-top: 3%;"> 
+  <div class="playlistText">
+    <img src="images/song.png" style="float: left;width: 50px;height: 50px"> Mac Miller<br><a style="font-size: 18px">Everybody</a>
+  </div>
+
+  <audio controls loop class="audio" style="margin-top: 5%">  
+  <source src="songs/MacMiller_Everybody.mp3" type="audio/mpeg"> 
+  </audio>
+</div>
+
+<div class="song" align="center" style="margin-top: 3%;"> 
+  <div class="playlistText">
+    <img src="images/song.png" style="float: left;width: 50px;height: 50px"> XXXTentacion<br><a style="font-size: 18px">Revenge</a>
+  </div>
+
+  <audio controls loop class="audio" style="margin-top: 5%">  
+  <source src="songs/XXXTENTACION_Revenge.mp3" type="audio/mpeg"> 
+  </audio>
+</div>
+
+
+</div>
+
+<p><a href="#ex1" rel="modal:open"><img src="images/music.png" class="musicImg"></a></p>
+
+</div>
+
+<div class="timer">
+	<p id="demo"></p>
+</div>
+
+
+    </div>
+
+    <script type="text/javascript" src="fullscreen.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+
+</body>
+</html>
